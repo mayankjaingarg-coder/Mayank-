@@ -1,18 +1,138 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Robotic Dog</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Robotic Dog Website</title>
+
+    <!-- ===== CSS START ===== -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #111;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(to right, #1f4037, #99f2c8);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        /* Sections */
+        .section {
+            padding: 50px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .section p, .section ul {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .light {
+            background-color: #ffffff;
+        }
+
+        /* Buttons */
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 12px 25px;
+            margin: 10px;
+            font-size: 16px;
+            border: none;
+            background-color: #1f4037;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #145a32;
+        }
+
+        /* Output */
+        #output {
+            margin-top: 25px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #111;
+            color: white;
+        }
+    </style>
+    <!-- ===== CSS END ===== -->
 </head>
+
 <body>
 
-    <h1>Robotic Dog</h1>
-    <p>This website explains the concept of a robotic dog.</p>
+    <!-- Navbar -->
+    <div class="navbar">
+        <h2>🤖 Robotic Dog</h2>
+        <div>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#control">Control</a>
+        </div>
+    </div>
 
-    <button onclick="action()">Click Me</button>
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Robotic Dog</h1>
+        <p>An intelligent robotic companion designed to assist humans.</p>
+    </section>
 
-    <p id="result"></p>
-
-    <script src="script.js"></script>
-</body>
-</html>
+    <!-- About -->
+    <section id="about" class="section">
+        <h2>About Robotic Dog</h2>
+        <p>
+            A robotic dog is an intelligent machine that mimics the behavior of a real dog.
+            It can walk, sit, detect obstacles, and respond to commands.
+            Robotic dogs are used in security, re
